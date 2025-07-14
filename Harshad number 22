@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num,Sum;
+    scanf("%d",&num);
+    int temp=num;
+    while(num>0){
+    Sum+=num%10;
+    num=num/10;
+    }
+    if(temp%Sum==0){
+        printf("Harshad Number");
+    }
+    else
+    {
+        printf("Not Harshad Number");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
