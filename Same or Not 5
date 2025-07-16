@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int size, i, num;
+    int evenCount = 0, oddCount = 0;
+    scanf("%d", &size);
+    for (i = 0; i < size; i++) {
+        scanf("%d", &num);
+        if (num % 2 == 0) {
+            evenCount++;
+        } else {
+            oddCount++;
+        }
+    }
+    if (evenCount == size) {
+        printf("Even\n");
+    } else if (oddCount == size) {
+        printf("Odd\n");
+    } else {
+        printf("Mixed\n");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
